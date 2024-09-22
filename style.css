@@ -1,0 +1,97 @@
+/* Layout básico */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header {
+  background-color: #c0e9df;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #333;
+}
+
+.menu-btn {
+  display: block;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  text-align: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #575757;
+}
+
+.imagem-principal {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Estilo das seções */
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #4CAF50;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #c0e9df;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Design responsivo */
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
